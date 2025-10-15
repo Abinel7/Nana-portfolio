@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rayane</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button id="theme-toggle" class="header__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a
+              class="header__schedule btn"
+              href="https://wa.me/556782179985?text=Olá%20vim%20pelo%20seu%20site!"
+              >Schedule</a
+            >
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li>
+            <a class="mobile-nav__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="mobile-nav__link" href="#contact">Contact</a>
+          </li>
+          <li class="mobile-nav__link-line"></li>
+          <li>
+            <button id="theme-toggle" class="mobile-nav__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a
+              class="mobile-nav__btn btn"
+              href="https://wa.me/556782179985?text=Olá%20vim%20pelo%20seu%20site!"
+              >Schedule</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- End of Mobile Navigation -->
+    <main>
+      <section class="hero container">
+        <img class="hero__img" src="/hero.jpg" alt="profile picture" />
+        <h2 class="hero__subtitle">Hi, I'm Rayane</h2>
+        <h1 class="hero__title">facial beautician</h1>
+        <p class="hero__description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+          tempora ad nulla voluptas repellendus totam quidem perspiciatis,
+          consequuntur, est maxime vitae ipsa natus, quaerat vero! Harum
+          exercitationem enim accusamus quo?
+        </p>
+        <a
+          class="hero__btn btn"
+          href="https://wa.me/556782179985?text=Olá%20vim%20pelo%20seu%20site!"
+          >schedule</a
+        >
+      </section>
+      <section id="about" class="about container section">
+        <div class="about__content">
+          <h2 class="about__title">About</h2>
+          <p class="about__description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum
+            dignissimos, provident quos voluptate harum est quia aspernatur,
+            nostrum laborum maiores, voluptates doloribus corrupti corporis
+            animi molestiae omnis! In, perferendis asperiores.
+          </p>
+          <p class="about__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione,
+            officia eligendi? Quae ipsum, neque suscipit dolor eius excepturi
+            nemo non! Non debitis, at laborum est nostrum dolores optio cum rem!
+          </p>
+          <p class="about__description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+            libero alias magni molestiae modi in. Assumenda, molestias.
+            Corporis, dolor doloremque numquam, illo blanditiis voluptas in quo
+            atque distinctio cumque omnis.
+          </p>
+          <hr class="about__hr" />
+          <h3 class="about__subtitle">Make</h3>
+          <div class="about__ul-container">
+            <ul class="about__ul">
+              <li class="about__list">MAKE</li>
+              <li class="about__list">FACIAL</li>
+              <li class="about__list">beautician</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">test</li>
+              <li class="about__list">test</li>
+              <li class="about__list">tes</li>
+            </ul>
+          </div>
+        </div>
+        <div class="about__img-wrapper">
+          <img
+            class="about__img lazy"
+            src="https://via.placeholder.com/960x1280"
+            data-src="/hero.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+      <section id="featured" class="featured container section">
+        <h3 class="featured__subtitle">Featured project</h3>
+        <h2 class="featured__title">Make</h2>
+        <p class="featured__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+          doloremque temporibus debitis consequuntur quo aliquam eos repellat
+          eum, illo deserunt! Aliquid rem veniam eveniet alias voluptatem velit,
+          aut amet suscipit?
+        </p>
+        <div class="featured__img-container">
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/820x809"
+              data-src="/8d26bc6688ba15285b549cc0aae78b92.jpg"
+              alt=""
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/820x809"
+              data-src="/Elegant Floral Glow for Nana.png"
+              alt=""
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/820x809"
+              data-src="/WhatsApp Image 2025-05-06 at 13.16.54_10f88771.jpg"
+              alt=""
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/820x809"
+              data-src="/wp1828900-programmer-wallpapers.png"
+              alt=""
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/820x809"
+              data-src="/wp1828956-programmer-wallpapers.png"
+              alt=""
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/820x809"
+              data-src="/wp1828956-programmer-wallpapers.png"
+              alt=""
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/820x809"
+              data-src="/8d26bc6688ba15285b549cc0aae78b92.jpg"
+              alt=""
+            />
+          </div>
+          <div class="featured__img-wrapper">
+            <img
+              class="lazy loading"
+              src="https://via.placeholder.com/820x809"
+              data-src="/hero.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact container section">
+        <h2 class="contact__title">Get In Contact</h2>
+        <p class="contact__description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+          possimus nemo ipsam quam reprehenderit nostrum quasi exercitationem
+          non recusandae, totam illum quia perspiciatis ut iure culpa, veniam
+          inventore distinctio vitae.
+        </p>
+        <a class="contact__btn btn" href="">Instagram</a>
+        <a
+          class="contact__btn btn"
+          href="https://wa.me/556782179985?text=Olá%20vim%20pelo%20seu%20site!"
+          >Schedule</a
+        >
+      </section>
+    </main>
+    <footer class="footer container section">
+      <h3 class="footer__title">~ Abinel ~</h3>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
