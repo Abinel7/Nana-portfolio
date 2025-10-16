@@ -89,3 +89,9 @@
 /* 2xl 
 @media (min-width: 1536px) {
 }  */
+
+.contact__btn i {
+  margin-right: 8px;
+  font-size: 1.2em;
+  vertical-align: middle;
+}

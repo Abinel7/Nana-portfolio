@@ -30,7 +30,7 @@
   display: inline-block;
   font-weight: 600;
   text-decoration: none;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.02em;
   background-color: var(--clr-rose);
   color: oklch(96.8% 0.007 247.896);
   padding: 0.5em 1em;
