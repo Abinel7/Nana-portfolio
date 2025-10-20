@@ -51,7 +51,7 @@
 }
 
 .featured__img-wrapper:hover::after {
-  background-color: rgba(112, 8, 209, 0.07);
+  background-color: rgba(220, 217, 223, 0.07);
 }
 
 /* xs */
