@@ -9,6 +9,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "vite": "^7.1.7"
+=======
+    "vite": "^7.2.2"
+>>>>>>> 5e1fd83 (ajustando mensagem wpp)
   }
 }
